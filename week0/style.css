@@ -1,1 +1,114 @@
 
+.imagestyle {
+        width: image width px; 
+        font-family: Raleway, sans-serif; 
+        font-size: 82%; 
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 80px;
+        font-family: Raleway, sans-serif;
+        text-align: center;
+        color: var(--h1-text);
+        @media (max-width: 500px) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+        font-family: 'Kaushan Script', sans-serif;
+        @media (max-width: 500px) {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      #header {
+        background-color: rgb(234, 237, 237);
+        text-align: center;
+        height: 170px;
+      }
+      #footer {
+        background-color: dimgray;
+        text-align: left;
+        height: 170px;
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        color: white;
+        padding: 25px;
+      }
+      img {
+        max-width: 750px;
+        align: center;
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        @media (max-width: 600px) {
+          max-width: 490px;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+      p {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        padding: 100px;
+        border-radius: 10px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: gainsboro;
+      }
+      /*The next five items I created after searching online for how to make a fixed menu. This was not covered in the 3 sections, but it was an element I knew I wanted to have on the page, so I found out how to do so online*/
+      .ulfixed {
+        list-style-type: none;
+        margin-left: 25px;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        border-radius: 10px;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+      }
+      li a:hover:not(.active) {
+        background-color: #008080;
+      }
+      .active {
+        background-color: green;
+      }
+      .liststyle {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        padding: 50px;
+        padding-bottom: 120px;
+        border-radius: 10px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: dimgray;
+        color: white;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 7vw;
+        }
+        h2 {
+          font-size: 5vw;
+        }
+      }
