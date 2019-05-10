@@ -1,1 +1,110 @@
 
+html {
+  background: burlywood;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+h2 {
+  clear: both;
+  background: beige;
+  width: 100%;
+  font-family: cursive;
+}
+
+#grid-floats img {
+  float: left;
+  height: auto;
+  width: 50%;
+  border-style: solid;
+  margin-right: 5%;
+ }
+
+#grid-floats li {
+  display: inline-block;
+  float: left;
+  margin: 1%;
+  width: 20%;
+  height: 20rem;
+  border-style: solid;
+  padding: 10px;
+  background: beige;
+}
+
+#grid-floats p {
+  padding: 5%;
+}
+
+li:nth-child(1) {
+  width: 44% !important;
+  text-emphasis-style: bold;
+}
+
+li:nth-child(1) p {
+  font-size: 130%;
+}
+
+@media screen and (max-width: 400px) {
+  #grid-floats li {
+    width: 40%;
+    overflow: scroll;
+  }
+  li:nth-child(1) {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  #grid-floats li {
+    width: 27%;
+  }
+  li:nth-child(1) {
+    width: 40% !important;
+  }
+  li:nth-child(2) {
+    width: 40% !important;
+  }
+}
+
+#grid-flex {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#grid-flex p {
+  padding: 5%;
+}
+
+#grid-flex li {
+  width: 20%;
+  margin: 1%;
+  background: beige;
+  padding: 1%;
+  border-style: solid;
+}
+
+#grid-flex img {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: .5rem;
+}
+
+@media screen and (max-width: 400px) {
+  #grid-flex li {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  #grid-flex li {
+    width: 28%;
+  }
+}
