@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 02 In-Class Project</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .menu ul li {
+                float: left;
+                padding: 10px;  
+                margin: 5px;  
+            }
+            /*first-child tells it to make just the first option red*/
+            .menu ul li:first-child {
+                color:red;
+            }
+            /*if you add >, it tells it to only use the direct child, not the grandchildren*/
+            .menu>ul>li:first-child {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="border:1px solid blue">
+            hello
+            <div class="child">
+                world
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Menu 1</li>
+                <ul>
+                        <li>Sub 1</li>
+                        <li>Sub 2</li>
+                        <li>Sub 3</li>
+                    </ul>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul>
+        </div>
+    </body>
+</html>
+<!--you can right click on a page in Chrome and inspect the html-->
+<!--in inspect, you can hover over an element, and it will be shown in a box
+Box grid on the right shows the sizes of various elements
+In the windows on the right, you can try out things and if you don't like them, they won't be saved
+If you do like them, make sure to copy paste to actual code
+Can also be used to examine precedence in real time!
+Also useful for troubleshooting
+Arrow in top left of right side can be used to select an element in the page and it will highlight it
+Inspect can also be used to see how your site will look on different devices
+
+-->
