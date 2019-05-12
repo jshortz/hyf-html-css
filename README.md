@@ -1,2 +1,2 @@
 # hyf-html-css
-HTML and CSS test repo
+HTML and CSS repository for Foo Coding program
