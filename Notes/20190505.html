@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <!--Responsive Web Design: changing your output depending on device-->
+    <!--CSS Units: em, rem, %, px, vh, vw-->
+    <head>
+        <!--Example of pixel resizing in style element-->
+        <!--em : em is times the parent size; if no parent, 16px-->
+        <!--rem : times root element, not dependent on other elements/parents-->
+        <!--% : size related to parent element, sort of like em-->
+
+        <style>
+            p {
+                font-size: 20px;
+            }
+            /*media query example */
+            @media screen and (max-width: 992px) {
+                body {
+                    background-color: black;
+                    color: white;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: red;
+                    color: white;
+                }
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <p>Welcome to Week 2</p>
+        <div id="Sizes">
+            <p style="font-size:2em;">Example of em sizing</p>
+            <p style="font-size:3rem;">Example of rem sizing</p>
+            <p style="font-size:150%;">Example of % size</p>
+            <p style="font-size:3vh;">Example of vh size</p>
+            <p style="font-size:3">Example</p>
+        </div>
+        <div id="Positions">
+            <!--Every element has a static position by default-->
+            <!--if there's a left, right, top, etc, there will be no effect if static-->
+            <!--relative position follows the settings of the document (check this later), so top, left, etc will have effect-->
+            <!--absolute position takes the position of the parent element, not the doc-->
+            <!--Note that below, relative is further to the right because the doc style includes a 10px border already-->
+            <!--fixed position: element stays fixed even when user scrolls or moves around on the page-->
+            <!--sticky position: similar to fixed-->
+            <p style="position:static;">Example of static position (default)</p>
+            <p style="left:50px; position:relative;">Example of relative position</p>
+            <p style="left: 50px; position:absolute;">Example of absolute position</p>
+            <br>
+            <p style="position:fixed;">Example of fixed position</p>
+            <br>
+            <img style="float:left;" src="https://lorelle.files.wordpress.com/2015/01/wordpress-school-with-lorelle-learn-wordpress-badge.gif?w=230&h=230&zoom=2">
+            <p>Example of float position, where image is floated and text appears to its right. Float right would fix the image to the right and the text would appear to its left.</p>
+        </div>
+        <div id="CLI">
+            <!--
+                Command line has no GUI
+                cd = change directory
+                CLI git commands:
+                    git pull
+                    git log
+                        -easy to track changes and see them
+                Essentially, when we do back end, we're going to be using CLI
+                mkdir: make a new folder
+                pwd: shows current directory
+                touch: creates a file
+                rm: removes a file (be careful with this one)
+            -->
+        </div>
+        <div id="flex">
+            <!--From 2017 onward, browsers support flex modeling
+                He sort of blew past this, will have to look up flex and how to apply later
+            -->
+            <div>
+                <ul style="display: flex; flex-direction:column;">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+        </div>
+        <div id="mediaqueries">
+
+
+        </div>
+    </body>
+</html>
+

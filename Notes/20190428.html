@@ -1,0 +1,97 @@
+<html>
+    <!--This is the only type of text that the browser can read
+    First structure is the root element
+    Tags are the <>
+    within the html element, we should have a <head> element
+    To open in browser, should be able to right click and ask open in browser EXPERIMENT LATER WITH GETTING THIS TO WORK
+    -->
+    <head>
+        <!-- Within the head element, we should have a title - this is what will show up as the title of the webpage in the browser-->
+        <title>
+            <!-- Assume this would show up in the tab at the top if it wasn't an internal preview file-->
+            Welcome
+        </title>
+        <!--example of style that applies to all h2-->
+        <style>
+            h2 {
+                color:purple;
+                background: blue;
+            }
+        </style>
+        <!--link to stylesheet CSS example-->
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <!-- After the head, all the rest should go in the body-->
+        Hello, welcome to the first class!
+        <!--line example; opens and closes right away because it's not meant to hold content-->
+        <hr/>
+        <!--Headers examples-->
+        <header>
+            <!--using the header and footer tags adds readability to webpage-->
+            <h1>Your Name</h1>
+        </header>
+        <h2>Hobbies</h2>
+        <p>
+            <!--list examples; note the default style - CSS can be used to change default-->
+            <ul>
+                <li>Games</li>
+                <li>Travel</li>
+                <li>Music</li>
+            </ul>
+            <ol>
+                <li>Volunteering</li>
+                <li>Cats</li>
+            </ol>
+            <ol type="A">
+                <li>More cats</li> 
+                <li>Collecting Stickers</li>   
+            </ol>
+        </p>
+        <h3>Where are you from</h3>
+        <!--anchor element example-->
+        <a href="http://google.com">Google</a>
+        <!--image example-->
+        <img src="hello.jpg" alt="welcome picture">
+        <!--image with style attributes--> 
+        <img src="style.jpg" alt="styled image">
+        <!--text paragraph example with line break-->
+        <br>
+        <p>My name is Jessica and I'm from Texas</p>
+        <br>
+        <!--inline bold and italics examples-->
+        <p>I now <i>live</i> in <b>Sweden</b>.</p>
+        <!--form example-->
+        <form>
+            <!--inline CSS ex; note that div creates blocks without br-->
+            <div>
+                Country: <input type="text">
+            </div>
+            <div style="color:red; background:blue">
+                City: <input type="text" value="New York City"><br>
+            </div>
+            <br>
+            <!--for checkboxes and radio, name indicates that they're part of the same category (necessary to make radio look correct)-->
+            Dream Destinations: <br>
+                <!--label id example in Tokyo, useful for CSS style-->
+                <input type="checkbox" name= "dest" value="Tokyo"><label id="Tokyo">Tokyo</label><br>
+                <!--attempting to use class for CSS style-->
+                <input type="checkbox" name="dest" value="Morocco"><span class="subLabel">Morocco</span><br>
+                <input type="checkbox" name="dest" value="Rio">Rio de Janeiro<br><br>
+            Love of Traveling (1: least, 5: most):<br> 
+                <input type="radio" name="scale" value="1">1<br>
+                <input type="radio" name="scale" value="2">2<br>
+                <input type="radio" name="scale" value="3">3<br>
+                <input type="radio" name="scale" value="4">4<br>
+                <input type="radio" name="scale" value="5">5<br>
+            <br>
+            <!--password type automatically obscures text-->
+            Password: <input type="password">
+        </form>
+        <br>
+        <!--footer example-->
+        <footer>
+            copyright 2019
+        </footer>
+    </body>
+</html>
