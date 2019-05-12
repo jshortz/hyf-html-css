@@ -1,0 +1,10 @@
+We can use the attrib command to change the attributes of a file
+To make a file hidden, we use attrib
+Example: attrib +h [file/folder name] - makes a file/folder hidden
+To make a file not-hidden anymore, attrib -h [file/foldername]
+Note that ls displays all files, including hidden ones
+To append text to the end of a file, echo "text" >> filename
+To learn how to create multiple directories at once with mkdir, I followed this article: https://www.howtogeek.com/275069/how-to-create-multiple-subdirectories-with-one-linux-command/
+Syntax of how to create multiple directories: mkdir -p fdr/{sfdr1,sfdr2,sfdr3}
+To create multiple folders under subfolders: mkdir -p fdr/{sfdr1/{ssfdr1, ssfdr2},sfdr2,sfdr3}
+If you're not creating multiple directories on the same level, {} are not needed
