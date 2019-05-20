@@ -1,0 +1,56 @@
+html {
+    background: white;
+}
+#mainbody {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 16% 12% 12% 12% 12% 12% 12% 12%;
+    align-items: center;
+    justify-items: center;
+}
+#headertarelink img {
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+#backgroundsplash {
+    position: relative;
+}
+#splashtextbox {
+    height: 3em;
+    width: 75%;
+    position: absolute !important;
+    top: 40%;
+    left: 15%;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28pt;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#circlelink {
+    background: teal;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
+    font-size: 30pt;
+    font-family: 'Arizonia', cursive;
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    line-height: 250%;
+}
+#circlelink a:visited {
+    color: white;
+}
